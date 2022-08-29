@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="ajay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <!-- Font family cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200;1,300&family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="./tabindex.css" />
+</head>
+<body>
+    <center>
+        <!-- parnet container  -->
+        <div class="container">
+            <!-- sub container 1 -->
+            <div class="sub-container1">
+                <p>Model Form</p>
+            </div>
+            <!-- sub container 2 -->
+            <div class="sub-container2">
+                <h2>Register Page</h2>
+
+                <!-- FORM -->
+
+                <form action="#" target="_blank">
+                    <!-- Form container  -->
+                    <div class="input-container">
+                        <!-- Text input  -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name..." autofocus />
+                        <!-- Email input  -->
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="eg: abc@gmail.com" tabindex="1" />
+                        <!-- Radio input  -->
+                        <label for="gender">Gender: </label>
+                        <div>
+                            <input type="radio" name="gender" id="male" tabindex="2" style="accent-color: #4e4846;" /> Male
+                            <input type="radio" name="gender" id="female" tabindex="3" style="accent-color: #4e4846;" /> Female
+                        </div>
+                        <!-- DOB input  -->
+                        <label for="date">DOB: </label>
+                        <input type="date" name="date" id="date" tabindex="4" />
+                        <!-- Select input  -->
+                        <label for="city">City: </label>
+                        <select name="city" id="city">
+                            <optgroup label="Main Cities">
+                                <option value="1">Bengaluru</option>
+                            </optgroup>
+                            <optgroup label="Sub Cities">
+                                <option value="2">Mysore</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <span>Also register in <a href="./resume.html" target="_blank">Google</a></span><br />
+
+                    <!-- Buttons -->
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">CLEAR</button>
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

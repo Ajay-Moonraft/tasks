@@ -1,0 +1,91 @@
+/* Page Styling */
+
+body{
+    background-color: #6d6262c1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin-top: 7rem;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 10px 5px rgb(79, 62, 62),5px 10px 5px rgb(79, 62, 62), 5px 10px 10px rgb(79, 62, 62), 5px 10px 5px rgb(79, 62, 62);
+}
+
+.sub-container1{
+    background-image: url('./img/img1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    padding: 2rem 0rem;
+}
+
+.sub-container1>p{
+    color: white;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.sub-container2{
+    padding: 0rem 1.5rem;
+}
+
+.sub-container2>h2{
+    color: #4e4846;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-container>label{
+    justify-self: flex-start;
+}
+
+.input-container>input, select{
+    color: rgb(121, 121, 121);
+    background-color: rgba(122, 122, 122, 0.315);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+form>span{
+    float: left;
+    color: #4e4846;
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+button{
+    cursor: pointer;
+    border:2px solid #4e4846;
+    border-radius: 3px;
+    color: #4e4846;
+    background-color: white;
+    padding: 5px 20px;
+    margin-top: 1rem;
+}
+
+button:hover{
+    transition: .5s;
+    background-color: #4e4846;
+    color: #fff;
+}

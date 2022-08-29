@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+}
+
+:root{
+    --black: rgb(0,0,0);
+    --gray: #838488;
+    --dark-gray: #272727;
+    --green: #0cfe5c;
+    --red: rgb(255,0,0);
+}
+
+body{
+    background: url('/image/bg-img.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+main{
+    color: white;
+    background-color: #121212ba;
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 5% 0;
+    padding: 3% 0;
+}
+
+h1{
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: stretch;
+    align-items: stretch;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+label{
+    padding-left: 20px;
+}
+
+p{
+    justify-self: center;
+    align-self: center;
+}
+
+sup, p{
+    color: var(--red);
+}
+
+input, textarea, .input, select{
+    padding: 8px 15px;
+    color: var(--dark-gray);
+    background-color: var();
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.relative{
+    position: relative;
+}
+
+img{
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.input{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    accent-color: var(--green);
+}
+
+.input > span{
+    display: flex;
+    gap: 10px;
+    color: var(--gray);
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 10px;
+    margin: 0 30%;
+}
+
+button{
+    padding: 8px 15px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
